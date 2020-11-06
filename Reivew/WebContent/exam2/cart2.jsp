@@ -9,7 +9,8 @@
 <script>
 // 체크한 상품의 수량과 단가의 곱의 전체 합계를 출력하시오.
 $(function() {
-
+	$(":checkbox:checked td")
+	//$(":checkbox:checked").parent().parent().children();
 });
 
 </script>
@@ -22,7 +23,15 @@ $(function() {
 	<tr><td>선택</td><td>상품</td><td>수량</td><td>단가</td></tr>
 </thead>
 <tbody>	
-	<tr><td><input type="checkbox"></td><td>볼펜</td><td>2</td><td>100</td></tr>
+	<tr>
+		<td>
+			<input type="checkbox">
+		</td>
+		<td>볼펜</td>
+		<td>2</td>
+		<td>100</td>
+	</tr>
+	
 	<tr><td><input type="checkbox"></td><td>사표</td><td>1</td><td>200</td></tr>
 	<tr><td><input type="checkbox"></td><td>지우개</td><td>5</td><td>50</td></tr>
 	<tr><td><input type="checkbox"></td><td>노트</td><td>10</td><td>200</td></tr>
